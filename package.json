@@ -40,7 +40,7 @@
     "tailwindcss": "^1.2.0",
     "tslib": "^1.10.0",
     "twilio": "^3.42.1",
-    "twilio-chat": "^3.3.4",
+    "twilio-chat": "^6.0.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
