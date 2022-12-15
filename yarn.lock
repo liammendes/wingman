@@ -963,12 +963,12 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.4.0", "@babel/runtime@^7.8.4":
-  version "7.9.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
-  integrity sha512-NE2DtOdufG7R5vnfQUTehdTfNycfUANEtCa9PssN9O/xmTzP4E08UI797ixaei6hBEVL9BI/PsdJS5x7mWoB9Q==
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.14.5", "@babel/runtime@^7.17.0", "@babel/runtime@^7.4.0", "@babel/runtime@^7.8.4":
+  version "7.20.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.6.tgz#facf4879bfed9b5326326273a64220f099b0fce3"
+  integrity sha512-Q+8MqP7TiHMWzSfwiJwXCjyf4GYA4Dgw3emg/7xmwsdLJOZUp+nMqcOwOzzYheuM1rhDu8FSj2l0aoMygEuXuA==
   dependencies:
-    regenerator-runtime "^0.13.4"
+    regenerator-runtime "^0.13.11"
 
 "@babel/template@7.8.6", "@babel/template@^7.4.0", "@babel/template@^7.7.4", "@babel/template@^7.8.3", "@babel/template@^7.8.6":
   version "7.8.6"
@@ -1371,6 +1371,71 @@
     rxjs "6.5.4"
     semver "7.1.3"
     semver-intersect "1.4.0"
+
+"@twilio/declarative-type-validator@^0.1.10", "@twilio/declarative-type-validator@^0.1.11":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@twilio/declarative-type-validator/-/declarative-type-validator-0.1.11.tgz#23dfd2f4017819606d65bc11906226063eef6fd3"
+  integrity sha512-yRAMLPD8j3k67UFvPeZvfTlKYuceiNq+iZ8a/ADzAbZMeaV0FMvsJmG97MH8yN/VdXY9hcscchsnc99bJ1sClw==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    core-js "^3.17.3"
+
+"@twilio/declarative-type-validator@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@twilio/declarative-type-validator/-/declarative-type-validator-0.2.1.tgz#4fbe3c2057e98c2044951c635f63d503dede8955"
+  integrity sha512-CKBYsH+bafRqLjZa4y9K52ObO7L9NPRg3+i+ewfF9KFBJZKErBKUzhLeLZcg7reiMo54kWOANUkGMKcEKWfjFA==
+  dependencies:
+    "@babel/runtime" "^7.17.0"
+    core-js "^3.17.3"
+
+"@twilio/mcs-client@^0.5.2":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@twilio/mcs-client/-/mcs-client-0.5.3.tgz#633405fc615f75e911ffeeebcaeaecf3a96ba85d"
+  integrity sha512-dZK4fxbFnN4n8lxRKBLdtyy8kVkicg00KrwZIuQHW2lwNQ0M0aCrMzCNR1PDx3m9RdpDeXDhO3BEYTl6RFRTLw==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@twilio/declarative-type-validator" "^0.1.11"
+    "@twilio/operation-retrier" "^4.0.7"
+    core-js "^3.17.3"
+    loglevel "^1.7.1"
+    xmlhttprequest "^1.8.0"
+
+"@twilio/notifications@^1.0.4":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@twilio/notifications/-/notifications-1.0.5.tgz#b5cf7b03beb32d8ba840cb71a3d1c8b630f90845"
+  integrity sha512-iPZrgXav0BixE2bbJFy7ExQY9I+ZrgXDkvkbEJN37dMHx/5wTX3UO1vGWDxfnhOZPFIpmBuwoflPIOMYVsgm2w==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    "@twilio/declarative-type-validator" "^0.1.11"
+    "@twilio/operation-retrier" "^4.0.7"
+    core-js "^3.17.3"
+    loglevel "^1.6.3"
+    twilsock "^0.12.2"
+    uuid "^3.4.0"
+
+"@twilio/operation-retrier@^4.0.6", "@twilio/operation-retrier@^4.0.7", "@twilio/operation-retrier@^4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@twilio/operation-retrier/-/operation-retrier-4.0.9.tgz#cd6788604e4b61b4be9f85219bcaf1b0a16c15f7"
+  integrity sha512-nFA+F0EDf+zfhiQng+UrMNTOTqWPsp+WE1WbcxdeRoSHYDF9yj/jDzhXLtNPrIyiKGoegXBjRPEVm9QOZkTr5g==
+  dependencies:
+    "@babel/runtime" "^7.17.0"
+    core-js "^3.17.3"
+
+"@twilio/replay-event-emitter@^0.2.3":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@twilio/replay-event-emitter/-/replay-event-emitter-0.2.4.tgz#865a5296c1fcd06c8e45a7a8b536785630f8a3d3"
+  integrity sha512-TbyiO4348fXfaUcIB++cZcNugRBeJvxl7d08EoyAxjdyEnAoGe4GwnuF5sazXnykHGR3W/WaPf5GG9o1jNOf7A==
+  dependencies:
+    "@babel/runtime" "^7.14.5"
+    core-js "^3.17.3"
+
+"@twilio/replay-event-emitter@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@twilio/replay-event-emitter/-/replay-event-emitter-0.3.1.tgz#db8461a46267e870d2c92ea578f4e2dd27940f56"
+  integrity sha512-zij2RhsnDW4HTv1e8YfFtuOP3VipWe3CBaLMI1sexkx2ld2HiNxXOd6UVOrqIZyBSgsCEmGUZSHKKcWvccHUdw==
+  dependencies:
+    "@babel/runtime" "^7.17.0"
+    core-js "^3.17.3"
 
 "@types/body-parser@*":
   version "1.19.0"
@@ -2999,6 +3064,11 @@ core-js@3.6.4:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.4.tgz#440a83536b458114b9cb2ac1580ba377dc470647"
   integrity sha512-4paDGScNgZP2IXXilaffL9X7968RuvwlkK3xWtZRVqgd8SYNiVKRJvkFd1aqqEuPfN7E68ZHEp9hDj6lHj4Hyw==
 
+core-js@^3.17.3:
+  version "3.26.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
+  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -4611,9 +4681,9 @@ hoist-non-react-statics@^3.1.0:
   integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
   dependencies:
     react-is "^16.7.0"
-    
-hosted-git-info@^3.0.8:
-  version "3.0.8"
+
+hosted-git-info@^2.1.4, hosted-git-info@^2.7.1:
+  version "2.8.9"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
   integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
@@ -5280,7 +5350,7 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
-iso8601-duration@^1.2.0:
+iso8601-duration@=1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/iso8601-duration/-/iso8601-duration-1.2.0.tgz#5fa6fc180a8fe95ad6a6721c9bdd9069cb59e80e"
   integrity sha512-ErTBd++b17E8nmWII1K1uZtBgD1E8RjyvwmxlCjPHNqHMD7gmcMHOw0E8Ro/6+QT4PhHRSnnMo7bxa1vFPkwhg==
@@ -5430,7 +5500,7 @@ jasminewd2@^2.1.0:
   resolved "https://registry.yarnpkg.com/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
   integrity sha1-43zwsX8ZnM4jvqcbIDk5Uka07E4=
 
-javascript-state-machine@^3.0.1:
+javascript-state-machine@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/javascript-state-machine/-/javascript-state-machine-3.1.0.tgz#06eeb2136a6a19ae1b56105c25caec283dd5cd14"
   integrity sha512-BwhYxQ1OPenBPXC735RgfB+ZUG8H3kjsx8hrYTgWnoy6TPipEy4fiicyhT2lxRKAXq9pG7CfFT8a2HLr6Hmwxg==
@@ -5804,6 +5874,11 @@ lodash.isboolean@^3.0.3:
   resolved "https://registry.yarnpkg.com/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz#6c2e171db2a257cd96802fd43b01b20d5f5870f6"
   integrity sha1-bC4XHbKiV82WgC/UOwGyDV9YcPY=
 
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
+
 lodash.isinteger@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz#619c0af3d03f8b04c31f5882840b77b11cd68343"
@@ -5874,10 +5949,10 @@ log4js@^4.0.0:
     rfdc "^1.1.4"
     streamroller "^1.0.6"
 
-loglevel@^1.6.3, loglevel@^1.6.4, loglevel@^1.6.6:
-  version "1.6.7"
-  resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.7.tgz#b3e034233188c68b889f5b862415306f565e2c56"
-  integrity sha512-cY2eLFrQSAfVPhCgH1s7JI73tMbg9YC3v3+ZHVW67sBS7UxWzNEk/ZBbSfLykBWHp33dqqtOv82gjhKEi81T/A==
+loglevel@^1.6.3, loglevel@^1.6.6, loglevel@^1.7.1, loglevel@^1.8.0:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.8.1.tgz#5c621f83d5b48c54ae93b6156353f555963377b4"
+  integrity sha512-tCRIJM51SHjAayKwC+QAg8hT8vg6z7GSgLJKGvzuPb1Wc+hLzqtuVLxp6/HzSPOozuK+8ErAhy7U/sVzw8Dgfg==
 
 long@^4.0.0:
   version "4.0.0"
@@ -6669,11 +6744,6 @@ open@7.0.3:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
 
-operation-retrier@^3.0.0, operation-retrier@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/operation-retrier/-/operation-retrier-3.0.1.tgz#c671902af3e40015005863e912226fd485ed749a"
-  integrity sha512-lmrISisi5nbu0WNXBCMagrdJFwLUYFnaas87PgOMM3aNi+Z2YFvyC5K7/cAJuNUtpljztwJPzvp8bho02sAMAg==
-
 opn@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/opn/-/opn-5.5.0.tgz#fc7164fab56d235904c51c3b27da6758ca3b9bfc"
@@ -7058,10 +7128,10 @@ pkg-up@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-platform@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/platform/-/platform-1.3.5.tgz#fb6958c696e07e2918d2eeda0f0bc9448d733444"
-  integrity sha512-TuvHS8AOIZNAlE77WUDiR4rySV/VMptyMfcfeoMgs4P8apaZM3JrnbzBiixKUv+XR6i+BXrQh8WAnjaSPFO65Q==
+platform@^1.3.6:
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/platform/-/platform-1.3.6.tgz#48b4ce983164b209c2d45a107adb31f473a6e7a7"
+  integrity sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==
 
 pop-iterate@^1.0.1:
   version "1.0.1"
@@ -7896,10 +7966,15 @@ regenerate@^1.4.0:
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
   integrity sha512-1G6jJVDWrt0rK99kBjvEtziZNCICAuvIPkSiUFIQxVP06RCVpq3dmDo2oi6ABpYaDYaTRr67BEhL8r1wgEZZKg==
 
-regenerator-runtime@0.13.5, regenerator-runtime@^0.13.4:
+regenerator-runtime@0.13.5:
   version "0.13.5"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.5.tgz#d878a1d094b4306d10b9096484b33ebd55e26697"
   integrity sha512-ZS5w8CpKFinUzOwW3c83oPeVXoNsrLsaCoLtJvAClH135j/R77RuymhiSErhm2lKcwSCIpmvIWSbDkIfAqKQlA==
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 regenerator-transform@^0.14.2:
   version "0.14.4"
@@ -8066,11 +8141,6 @@ reusify@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
   integrity sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==
-
-rfc6902@^3.0.2:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/rfc6902/-/rfc6902-3.0.4.tgz#82965f13536fd20cb7799ce0376e9ce7cd3ebfe6"
-  integrity sha512-OnzreaZXrwT5w2ikKXWr5QcuI7NZpL+J3hIkAwozjOnKVUL7fPsB8Vcmu8YBiiou1/r3V0Jc0T1uQDyfAPvLzA==
 
 rfdc@^1.1.4:
   version "1.1.4"
@@ -9283,52 +9353,41 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-twilio-chat@^3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/twilio-chat/-/twilio-chat-3.3.4.tgz#0211c85424b59ebdc8e68ab1000c82e6345b69a4"
-  integrity sha512-HZ68AWlsqVNjKum4dPHJ3gFkDPmrhzld4rHiQHbOlSPXO05Tyw8z4dwRki7SdTntLpqVL3lZeF7lSXz73pHs3A==
+twilio-chat@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/twilio-chat/-/twilio-chat-6.0.0.tgz#8e3e0ae48f61a9c545daaa0ac6bd3459620ff78a"
+  integrity sha512-dHdM7xMwkw86HtPwIRtzRXJYt/G213HcmdH7Dyx8DEKjd9KrDNHtp9dEFdxQL7TqdNNYX5F0c8jckRwvfzw3eA==
   dependencies:
-    iso8601-duration "^1.2.0"
+    "@babel/runtime" "^7.14.5"
+    "@twilio/declarative-type-validator" "^0.1.10"
+    "@twilio/mcs-client" "^0.5.2"
+    "@twilio/notifications" "^1.0.4"
+    "@twilio/operation-retrier" "^4.0.6"
+    "@twilio/replay-event-emitter" "^0.2.3"
+    core-js "^3.17.3"
+    iso8601-duration "=1.2.0"
+    lodash.isequal "^4.5.0"
     loglevel "^1.6.6"
-    operation-retrier "^3.0.0"
-    platform "^1.3.5"
-    rfc6902 "^3.0.2"
-    twilio-mcs-client "^0.3.3"
-    twilio-notifications "^0.5.8"
-    twilio-sync "^0.11.5"
-    twilsock "^0.5.11"
-    uuid "^3.3.2"
+    platform "^1.3.6"
+    twilio-sync "^3.0.6"
+    twilsock "^0.12.1"
+    uuid "^3.4.0"
 
-twilio-mcs-client@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/twilio-mcs-client/-/twilio-mcs-client-0.3.3.tgz#6d4c6ae56af77c0d7631131dac2ce28a33652efc"
-  integrity sha512-lNnVITgLg14HBG2oshnwjAeyBxhuqJeAIQE/KUDCGLHwtA6moE49SE1RRtUr5hhziyDSCTjm5X8YeP0m/lL7QA==
+twilio-sync@^3.0.6:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/twilio-sync/-/twilio-sync-3.2.2.tgz#58f3ab65acba9717dae713f9f51a8fc77cd7e133"
+  integrity sha512-Av2XsXAg2F3lqUYCSVPDDOmT/8V+Jf1jGa8QGgYZO0/ueX84bRFasPvZRB28UM2B1ituEly2mtH5vlpVnnar7A==
   dependencies:
-    loglevel "^1.6.4"
-    operation-retrier "^3.0.1"
-    xmlhttprequest "^1.8.0"
-
-twilio-notifications@^0.5.8:
-  version "0.5.8"
-  resolved "https://registry.yarnpkg.com/twilio-notifications/-/twilio-notifications-0.5.8.tgz#7fae3e7922f418545178f70cc4e1f6321e0ceed7"
-  integrity sha512-iUpEoRKhO6VDtyTuR3N1Nc9tzqaJnWoq99/FDcRwTOSlFNrzcDR/wb6eC36JgsnHGUAlwvjM9rmy0EcfdvtPzA==
-  dependencies:
-    loglevel "^1.6.3"
-    operation-retrier "^3.0.0"
-    twilsock "^0.5.11"
-    uuid "^3.2.1"
-
-twilio-sync@^0.11.5:
-  version "0.11.5"
-  resolved "https://registry.yarnpkg.com/twilio-sync/-/twilio-sync-0.11.5.tgz#945e06117204fd23eab9022b27aa3d5c6b645ed9"
-  integrity sha512-Gsr2Xms4HdnTzOnqayalMiIRD7A8iWUAk2UG83l0KFttH0sEXkU79QClm7j2qla1MD6s4niqrRAekVMYqeo/7Q==
-  dependencies:
-    loglevel "^1.6.3"
-    operation-retrier "^3.0.0"
-    platform "^1.3.5"
-    twilio-notifications "^0.5.8"
-    twilsock "^0.5.11"
-    uuid "^3.3.2"
+    "@babel/runtime" "^7.17.0"
+    "@twilio/declarative-type-validator" "^0.2.1"
+    "@twilio/operation-retrier" "^4.0.9"
+    "@twilio/replay-event-emitter" "^0.3.1"
+    core-js "^3.17.3"
+    iso8601-duration "=1.2.0"
+    loglevel "^1.8.0"
+    platform "^1.3.6"
+    twilsock "~0.12.2"
+    uuid "^3.4.0"
 
 twilio@^3.42.1:
   version "3.42.1"
@@ -9347,17 +9406,21 @@ twilio@^3.42.1:
     url-parse "^1.4.7"
     xmlbuilder "^13.0.2"
 
-twilsock@^0.5.11:
-  version "0.5.11"
-  resolved "https://registry.yarnpkg.com/twilsock/-/twilsock-0.5.11.tgz#bb52f70c8086c00980e0ec4302b7007393bdb28d"
-  integrity sha512-SjhNPRAcCQBxpRlKKIoL4k+kxXxoPTIJsGDch5oo8Way3WTr8NRXEbTdK8IgB8nFEs8PGZnCk0mrzCTu0KfO0g==
+twilsock@^0.12.1, twilsock@^0.12.2, twilsock@~0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/twilsock/-/twilsock-0.12.2.tgz#bc6331b14a80fb8a7d8022d2cb4a809cd6834b6f"
+  integrity sha512-7G59f2TCEnxcY2ZBCzaZOPmMDoxDrK9lMTiA7UvuiKca37Dljbdlu2EHI3+d7gU1JHkH5GNCmyxqJzSbZodwXA==
   dependencies:
-    javascript-state-machine "^3.0.1"
+    "@babel/runtime" "^7.14.5"
+    "@twilio/declarative-type-validator" "^0.1.11"
+    "@twilio/operation-retrier" "^4.0.7"
+    core-js "^3.17.3"
+    iso8601-duration "=1.2.0"
+    javascript-state-machine "^3.1.0"
     loglevel "^1.6.3"
-    operation-retrier "^3.0.0"
-    platform "^1.3.5"
-    uuid "^3.2.1"
-    ws "^5.1.0"
+    platform "^1.3.6"
+    uuid "^3.4.0"
+    ws "^5.2.3"
 
 type-fest@^0.11.0:
   version "0.11.0"
@@ -9583,7 +9646,7 @@ uuid@7.0.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.2.tgz#7ff5c203467e91f5e0d85cfcbaaf7d2ebbca9be6"
   integrity sha512-vy9V/+pKG+5ZTYKf+VcphF5Oc6EFiu3W8Nv3P3zIh0EqVI80ZxOzuPfe9EHjkFNvf8+xuTHVeei4Drydlx4zjw==
 
-uuid@^3.0.0, uuid@^3.0.1, uuid@^3.2.1, uuid@^3.3.2:
+uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
@@ -9881,10 +9944,10 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ws@^5.1.0:
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-5.2.2.tgz#dffef14866b8e8dc9133582514d1befaf96e980f"
-  integrity sha512-jaHFD6PFv6UgoIVda6qZllptQsMlDEJkTQcybzzXDYM1XO9Y8em691FGMPmM46WGyLU4z9KMgQN+qrux/nhlHA==
+ws@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/ws/-/ws-5.2.3.tgz#05541053414921bc29c63bee14b8b0dd50b07b3d"
+  integrity sha512-jZArVERrMsKUatIdnLzqvcfydI85dvd/Fp1u/VOpfdDWQ4c9qWXe+VIeAbQ5FrDwciAkr+lzofXLz3Kuf26AOA==
   dependencies:
     async-limiter "~1.0.0"
 
